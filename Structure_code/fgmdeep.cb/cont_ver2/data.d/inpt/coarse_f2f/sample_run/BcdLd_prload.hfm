@@ -1,0 +1,76 @@
+*StrctStLn
+*PlaneStress      1  
+*START Material
+*NMat      2  
+
+*Material      1  
+*Density       7.8000e+03  
+**KelvinVoight NotSpecified
+*LinearElastic   Isotropic       2.1000e+11           3.0000e-01  
+
+*Material      2  
+*Density       7.8000e+03  
+**KelvinVoight NotSpecified
+*LinearElastic   Isotropic       2.1000e+11           3.0000e-01  
+*END Material
+
+*START Geometry
+*Geometry     D2
+*NPart      2  
+
+*PartId       1  
+*MaterialId       1  
+*MaterialModel       1  
+*FormulationType       1 
+*Thickness            1
+*Elements
+      1        3        1  
+      0        0        0  
+
+*PartId       2  
+*MaterialId       2  
+*MaterialModel       1  
+*FormulationType       1 
+*Thickness            1
+*Elements
+      4        6        1  
+      0        0        0  
+*END Geometry
+
+*START SetDetails
+**VEleSet NotSpecified
+
+*SEleSet      3  
+bdy1
+      4        6        1        1
+      0        0        0  
+bdy2
+      1        3        1        3
+      0        0        0  
+pr
+      4        6        1        3
+      0        0        0  
+
+*NodeSet      1  
+fixed
+      1        3        1  
+     22       24        1  
+      0        0        0  
+*END SetDetails
+
+*START BoundaryCondition
+**BoundaryEle NotSpecified
+*BoundaryNd       1      2  
+fixed      2  
+1           0     
+2           0     
+*END BoundaryCondition
+
+*START LoadingCondition
+**PointLoad NotSpecified
+**TractionLoad NotSpecified
+*PressureLoad       1  
+pr          10             0             0       1
+**GLoad NotSpecified
+*END LoadingCondition
+*FILEEND

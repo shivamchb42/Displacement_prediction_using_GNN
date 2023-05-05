@@ -1,0 +1,26 @@
+mflg 0 0.0 1.0 0.0  1.0 0.0 ipress 1 igrav 0 icont  1
+..........................enter the pressure data......................
+15e7 0 0 0
+5,50,5,3
+0,0,0,0
+..........................enter the gravity data......................
+.................... contact data..............................
+55,100,5,3
+0,0,0,0
+1,50,5,1
+0,0,0,0
+..........................enter the displacement data......................
+0,0,0,0,0,0
+0,0,0,0,0,0
+11,231,11,0,-1e-3,0
+
+ pressure data
+
+finpt_bcds_bottom_fixed
+232   462     11   1   1   0
+finpt_bcds_side_fixed
+232   242      1   1   1   0
+452   462      1   1   1   0
+
+ tip node on body1   352
+ tip node on body2   111

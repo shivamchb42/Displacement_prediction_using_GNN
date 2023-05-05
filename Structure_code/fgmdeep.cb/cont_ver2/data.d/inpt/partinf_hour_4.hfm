@@ -1,0 +1,16 @@
+** Part Data Input for Assembling the parts and specifying the materials
+
+*Domain    2.00
+
+*PartId      1
+*PartName    p1
+*Orientation   0.00000000e+00
+*Origin   0.00000000e+00   0.00000000e+00
+*Thickness      1
+*Eletyp      1     q4
+*Node    121
+*Element   100
+**CollapseNode
+*Elements
+      1    100      1
+      0      0      0

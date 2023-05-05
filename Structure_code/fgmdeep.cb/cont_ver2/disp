@@ -1,0 +1,8 @@
+ plane stress
+ Analysis for  q9  451   nodes  100    elements                                 
+ equitol  1.000000000000000E-008
+  
+ p9_3      
+ mflg2,maxtime,deltat , ipress,igrav,icont,loadsteps
+  0 0.100E+01 0.100E+01     0     0     0     1
+ nlamarr            0    nmasarr           0

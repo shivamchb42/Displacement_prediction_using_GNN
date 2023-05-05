@@ -1,0 +1,18 @@
+finpt_bcds_bottom_fixed
+430   528      3   1   1   0
+finpt_bcds_side_fixed
+430   432      1   1   1   0
+526   528      1   1   1   0
+
+ contact data
+97,112,1,3
+0,0,0,0
+1,96,6,1
+0,0,0,0
+
+ pressure data
+6,96,6,3
+0,0,0,0
+
+ tip node on body1   480
+ tip node on body2   209

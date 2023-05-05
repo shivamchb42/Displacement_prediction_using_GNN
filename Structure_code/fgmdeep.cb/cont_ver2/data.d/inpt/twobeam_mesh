@@ -1,0 +1,5 @@
+it1: small element near to the fixed end
+it2: slave 80 maste 20 element uniform mesh
+it3: slave 50 : master 50 : fine coarse mesh
+it4: slave 30 master 20 element uniform mesh
+it5: slave 25 maste 20 element uniform mesh
